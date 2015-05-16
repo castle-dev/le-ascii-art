@@ -1,7 +1,7 @@
 le-ascii-art
 =========
 
-**High-level summary goes here**
+**Prints pretty stuff**
 
 ## Installation
 
@@ -10,7 +10,8 @@ le-ascii-art
 ## Usage
 
 ```
-  //TODO
+  var asciiArt = require('le-ascii-art');
+  asciiArt.printLogo();
 ```
 
 ## Tests
