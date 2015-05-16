@@ -1,6 +1,10 @@
 var chalk = require('chalk');
-
+/**
+ * A module for printing pretty stuff
+ * @module le-ascii-art
+ */
 module.exports = {
+  /** Print the Castle logo. */
   printLogo: function () {
     var art = [
       '                                                            ',
