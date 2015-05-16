@@ -1,6 +1,6 @@
 {
   "name": "le-ascii-art",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Makes pretty pictures with text",
   "main": "src/index.js",
   "scripts": {
@@ -39,5 +39,6 @@
     "sinon-chai": "^2.7.0"
   },
   "dependencies": {
+    "chalk": "^1.0.0"
   }
 }
