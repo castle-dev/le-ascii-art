@@ -17,5 +17,5 @@ script:
 - git push origin gh-pages -fq > /dev/null
 env:
   global:
-    - secure: mUXdkL/tp2b9Yx78TL5/abmQ7PgiOG4BgOKDifhu0K0rY0UBgD5Jl0eTX3aFxUfRLpgA3/H07D7LBPE3ArsWu6H1ad166SfAMoLvqxaywShoW2cguf+A9BhO7wzwcHJ/Ocboz+kPeIaHKwvFCSbatQHyD2CdAkUdCS+83uiGE9U=
-    - ENVIRONMENT=staging
+  - ENVIRONMENT=staging
+  - secure: QtfQb6G4pIeXvdHqnZSvvwhYu47COr11g0kCzIRDadU8sabFt1bGuuZAMkMmdBqt/ZWWFLZ2Rqnx86UYhdX4Z4f4z6kVld4j4TgPIRTgLcriXNtFaiNv5QqMmAy/4QFkhIHwg+89VzTrXS0p2+1+FHtHuHAPNM9QddXYDfhUK22/AxkzZhwTJIpVxGy+x5Zabr/gzEMcJYt4KwOwKB9sV/QnUdimePvTaB42I5l3ot7UxdemEFL/+jtZWBGDILO4H0Ez4X43PPTI+X454LaqpSdr+ZyzudXTsTPqMGR0TebG4QS6MNkiP8QnnG/9fbUw1GPHELfmgc/A+wXLBX19SY8xdQMvJVkZMDjUyU/Czl32jAkOsZOHufj2AiZZCwq3lYUe4wLb1tKTDk0JaFSXcQ00a7yhei9dkXNd9dPeVgjbqK0Eq9M8DL6D/WKvl5wLdQwAGyU5ODZtGJd54xy40v7FS1OSmuTjlKs4aPW1tva0v59qQBvBPtW4xvwyMAcufGSxK/Jony1f0SUFDN3f6pYTvw6QfkCyM+CtmSnDY3DiN9Ay55WkFUYpRLHGoHhUNXTWFWHtyJCje3/w9LuMnegh1TKWxx8rUaghvhJhrpYdoNI9e3+hq/kTyISBCfRKEatm5VKgvwvgzeUeOnwVlmptdBmtyPUYJZc7D2PIL5w=
