@@ -6,46 +6,70 @@ var chalk = require('chalk');
 module.exports = {
   /** Print the Castle logo. */
   printLogo: function () {
-    var art = [
-      '                                                            ',
-      '                                                            ',
-      '                           ' + chalk.green('======') + '                           ',
-      '                        ' + chalk.green('+===========') + '                        ',
-      '                      ' + chalk.green('================,') + '                     ',
-      '                  ' + chalk.green('.==========') + chalk.bgWhite('77') + chalk.green('==========') + '                   ',
-      '                ' + chalk.green('===========') + chalk.bgWhite('777777') + chalk.green('===========') + '                ',
-      '              ' + chalk.green('=============') + chalk.bgWhite('777777') + chalk.green('==============') + '             ',
-      '              ' + chalk.green('=======') + chalk.bgWhite('77') + chalk.green('====') + chalk.bgWhite('777777') + chalk.green('====') + chalk.bgWhite('77') + chalk.green('=======+') + '             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('7777') + chalk.green('==') + chalk.bgWhite('7777777777') + chalk.green('==') + chalk.bgWhite('7777') + chalk.green('+====+') + '             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('7777777777777777777777') + chalk.green('+====+') + '             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('7777777777777777777777') + chalk.green('+====+') + '             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('7777777777777777777777') + chalk.green('+====+') + '             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('7777777777777777777777') + chalk.green('+====+') + '             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('777777777') + chalk.green('====') + chalk.bgWhite('777777777') + chalk.green('+=====') + '             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('777777') + chalk.green('+=========') + chalk.bgWhite('777777') + chalk.green('+====+') +'             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('7777') + chalk.green('==============') + chalk.bgWhite('7777') + chalk.green('+====+') + '             ',
-      '              ' + chalk.green('=====') + chalk.bgWhite('777') + chalk.green('================') + chalk.bgWhite('I77') + chalk.green('+=====') + '             ',
-      '              ' + chalk.green('=======') + chalk.bgWhite('777?') + chalk.green('===========') + chalk.bgWhite('777?') + chalk.green('======+') + '             ',
-      '              ' + chalk.green('=========') + chalk.bgWhite('7777') + chalk.green('======') + chalk.bgWhite('7777') + chalk.green('==========') + '             ',
-      '                ' + chalk.green('==========') + chalk.bgWhite('77777777') + chalk.green('==========') + '                ',
-      '                  ' + chalk.green(':==========') + chalk.bgWhite('77?') + chalk.green('==========') + '                  ',
-      '                     ' + chalk.green('+=================') + '                     ',
-      '                        ' + chalk.green('============') + '                        ',
-      '                           ' + chalk.green('======:') + '                          ',
-      '                             ' + chalk.green('==') + '                             ',
-      '                                                            ',
-      '                                                            ',
-      '                                                            ',
-      '    ' + chalk.blue(':::::::') + '     ' + chalk.blue('::') + '      ' + chalk.blue('::::::') + ' ' + chalk.blue(':::::::::') + '  ' + chalk.blue('::') + '      ' + chalk.blue(':::::::') + '   ',
-      '  ' + chalk.blue(':::') + '           ' + chalk.blue(':::') + '    ' + chalk.blue('::') + '          ' + chalk.blue('::') + '     ' + chalk.blue('::') + '      ' + chalk.blue('::') + '        ',
-      '  ' + chalk.blue('::') + '           ' + chalk.blue('::::') + '     ' + chalk.blue('::') + '         ' + chalk.blue('::') + '     ' + chalk.blue('::') + '      ' + chalk.blue('::') + '        ',
-      '  ' + chalk.blue('::') + '          ' + chalk.blue('::') + '  ' + chalk.blue('::') + '     ' + chalk.blue('::::') + '      ' + chalk.blue('::') + '     ' + chalk.blue('::') + '      ' + chalk.blue('::::::,') + '   ',
-      '  ' + chalk.blue('::') + '          ' + chalk.blue(':') + '    ' + chalk.blue('::') + '       ' + chalk.blue('::') + '     ' + chalk.blue('::') + '     ' + chalk.blue('::') + '      ' + chalk.blue('::') + '        ',
-      '   ' + chalk.blue('::') + '     ' + chalk.blue(':') + '  ' + chalk.blue('::') + '    ' + chalk.blue('::') + '  ' + chalk.blue( ':' ) + '    ' + chalk.blue('::') + '     ' + chalk.blue('::') + '     ' + chalk.blue('::') + '      ' + chalk.blue('::') + '        ',
-      '    ' + chalk.blue(':::::::') + ' ' + chalk.blue('::') + '      ' + chalk.blue('::') + ' ' + chalk.blue('::::::') + '      ' + chalk.blue('::') + '     ' + chalk.blue('::::::,') + ' ' + chalk.blue(':::::::') + '   ',
-      '                                                            ',
-      '                                                            '
+    var logo = [
+
+      '                                                                                ',
+      '                                                                                ',
+      '                                     `-/+/:.                                    ',
+      '                                  .:/++++++++/-`                                ',
+      '                              `-/+++++++++++++++/:.                             ',
+      '                           .:/++++++++++++++++++++++/-`                         ',
+      '                       `-/+++++++++++/-`  .:/+++++++++++:.                      ',
+      '                    .:/+++++++++++++-        /+++++++++++++/-`                  ',
+      '                  `+++++++++++//++++-        /++++//++++++++++:                 ',
+      '                  `++++++++:.  :++++.        :++++. `-/+++++++/                 ',
+      '                  `++++++:     :/-.           `.:+.    `++++++/                 ',
+      '                  `++++++:                             `++++++/                 ',
+      '                  `++++++:                             `++++++/                 ',
+      '                  `++++++:                             `++++++/                 ',
+      '                  `++++++:              .`             `++++++/                 ',
+      '                  `++++++:          `-:+++/:.          `++++++/                 ',
+      '                  `++++++:       .:/++++++++++/-`      `++++++/                 ',
+      '                  `++++++:   `-:+++++++++++++++++/:.   `++++++/                 ',
+      '                  `++++++:   -:+++++++++++++++++++/:`  `++++++/                 ',
+      '                  `++++++++:-`  .-/++++++++++++:-`  .-/+++++++/                 ',
+      '                  `+++++++++++/-.  `-:+++++/:.  `-:+++++++++++:                 ',
+      '                    `-/+++++++++++:-`  .--`  .-/+++++++++++:.`                  ',
+      '                        .:+++++++++++/:. `-:+++++++++++/-`                      ',
+      '                           `-/++++++++++++++++++++++:.`                         ',
+      '                               .:+++++++++++++++/-`                             ',
+      '                                  `-/++++++++:.                                 ',
+      '                                      .:+/-`                                    ',
+      '                                                                                ',
     ];
+    var name = [
+      '                                                                                ',
+      '         `..`          `           `.`                                          ',
+      '     -ohdmmmmdy/      :d:       -sdmmmmh. mmmmmmmmmmmm` hmy        ommmmmmmm+   ',
+      '   `smdo:.``.:+`     -dmd-     .mmo` `-/  ..../mm/....  hmy        omm......`   ',
+      '   ymd.             .dmymd.    .dmy-          -mm:      hmy        omm          ',
+      '  .mms             .dm+ ymh.    .ohmdy+.      -mm:      hmy        ommdddddh    ',
+      '  `dmh            `hmo  `ymh`      `:ymd:     -mm:      hmy        omm......    ',
+      '   :dmy-      .` `hmy    `hmy` `.    `mms     -mm:      hmy        omm          ',
+      '    .odmdyssydmo`ymy`     `hmy smdyssdmy.     -mm:      hmdyyyyyy: ommyyyyyy/   ',
+      '       -/++++:. .//`       .//. ./+++/.       `//.      :////////. -////////-   ',
+      '                                                                                ',
+      '                                                                                ',
+    ];
+    var art = [];
+    for (var i = 0; i < logo.length; i++) {
+      var prettyLine = [];
+      var chars = logo[i].split('');
+      for (var j = 0; j < chars.length; j++) {
+        if (chars[j] === ' ') { prettyLine.push(chars[j]); }
+        else { prettyLine.push(chalk.green(chars[j])); }
+      }
+      art.push(prettyLine.join(''));
+    }
+    for (var i = 0; i < name.length; i++) {
+      var prettyLine = [];
+      var chars = name[i].split('');
+      for (var j = 0; j < chars.length; j++) {
+        if (chars[j] === ' ') { prettyLine.push(chars[j]); }
+        else { prettyLine.push(chalk.blue(chars[j])); }
+      }
+      art.push(prettyLine.join(''));
+    }
     for (var line = 0; line < art.length; line++) {
       console.log(art[line]);
     }
