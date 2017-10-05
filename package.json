@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "description": "Makes pretty pictures with text",
   "main": "src/index.js",
+  "typings": "src/index.ts",
   "scripts": {
     "test": "gulp test"
   },
