@@ -1,4 +1,3 @@
-import chalk from 'chalk';
 /**
  * A module for printing pretty stuff
  * @module le-ascii-art
@@ -58,32 +57,13 @@ export class Printer {
     const logoLines = this.getLogoLines();
     const nameLines = this.getNameLines();
     logoLines.forEach((line) => {
-      this.printLine(line, 'green');
+      this.printLine(line);
     });
     nameLines.forEach((line) => {
-      this.printLine(line, 'blue');
+      this.printLine(line);
     });
   }
-  private printLine(text, color) {
-    let characters = text.split('');
-    let prettyLine = [];
-    characters.forEach((character) => {
-      if (character === ' ') {
-        prettyLine.push(character);
-      } else {
-        if (process) {
-          if (color === 'blue') {
-            prettyLine.push(chalk.blue(character));
-          } else if (color === 'green') {
-            prettyLine.push(chalk.green(character));
-          } else {
-            prettyLine.push(character);
-          }
-        } else {
-          prettyLine.push(character);
-        }
-      }
-    });
-    console.log(prettyLine);
+  private printLine(text) {
+    console.log(text);
   }
 };

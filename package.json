@@ -40,6 +40,5 @@
     "sinon-chai": "^2.7.0"
   },
   "dependencies": {
-    "chalk": "^1.0.0"
   }
 }

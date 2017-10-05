@@ -1,5 +1,4 @@
 "use strict";
-var chalk_1 = require('chalk');
 /**
  * A module for printing pretty stuff
  * @module le-ascii-art
@@ -61,37 +60,14 @@ var Printer = (function () {
         var logoLines = this.getLogoLines();
         var nameLines = this.getNameLines();
         logoLines.forEach(function (line) {
-            _this.printLine(line, 'green');
+            _this.printLine(line);
         });
         nameLines.forEach(function (line) {
-            _this.printLine(line, 'blue');
+            _this.printLine(line);
         });
     };
-    Printer.prototype.printLine = function (text, color) {
-        var characters = text.split('');
-        var prettyLine = [];
-        characters.forEach(function (character) {
-            if (character === ' ') {
-                prettyLine.push(character);
-            }
-            else {
-                if (process) {
-                    if (color === 'blue') {
-                        prettyLine.push(chalk_1["default"].blue(character));
-                    }
-                    else if (color === 'green') {
-                        prettyLine.push(chalk_1["default"].green(character));
-                    }
-                    else {
-                        prettyLine.push(character);
-                    }
-                }
-                else {
-                    prettyLine.push(character);
-                }
-            }
-        });
-        console.log(prettyLine);
+    Printer.prototype.printLine = function (text) {
+        console.log(text);
     };
     return Printer;
 }());
